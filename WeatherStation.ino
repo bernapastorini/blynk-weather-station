@@ -13,10 +13,10 @@
 BlynkTimer timer;
 WidgetRTC rtc;
 
-char auth[] = "_-_4ZkrWQ5XBgH0PO5K_Eb6h4HiU9Ojd";
+char auth[] = "TU TOKEN DE BLYNK";
 
-char ssid[] = "Bernardo";
-char pass[] = "2227430674";
+char ssid[] = "EL NOMBRE DE TU RED WIFI";
+char pass[] = "LA CONTRASEÑA DE TU RED WIFI";
 
 bool tweeted = false;
 bool firstRun = true;
@@ -44,9 +44,7 @@ void setup()
   Serial.begin(9600);
   Serial.println("Comunicacion serial iniciada.");
 
-  //Blynk.begin(auth, ssid, pass);
-  Blynk.config(auth);
-  Blynk.connect();
+  Blynk.begin(auth, ssid, pass);
   Serial.println("Conexion a internet establecida.");
 
   bmp280.begin(BMP280_I2C_ADDRESS);
@@ -64,6 +62,7 @@ void setup()
 void loop() 
 {
   timer.run();
+
   if(firstRun)
   {
     delay(5000);
@@ -88,6 +87,7 @@ void loop()
       Serial.println("");
       Serial.println(String("Temperatura DHT: ") + tempDHT);
       Serial.println(String("Temperatura BMP: ") + tempBMP);
+      Serial.println(String("Presión: " ) + pressure);
 
       averageTemp = (tempBMP + tempDHT) / 2;
       int minutes = minute();
@@ -97,9 +97,8 @@ void loop()
       Serial.println(".");
       Serial.println("Tweeteado.");
       tweeted = true;
-      Serial.println(tweeted);
 
-      Serial.println(String(hour()) + ":" + minute() + " La temperatura es de " + averageTemp + "ºC, la presion " + pressure + " hPa, y la humedad " + humidity + "%.");
+      Serial.println(String(hour()) + ":" + minute() + "hs. La temperatura es de " + averageTemp + "ºC, la presión " + pressure + " hPa, y la humedad " + humidity + "%.");
     }
   }
 
