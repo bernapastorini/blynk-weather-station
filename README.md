@@ -20,7 +20,7 @@
         <b>DHT22: </b> Instalable desde el gestor de librerías del IDE de Arduino. <br>
     </li>
     <li>
-        <b>Adafruit BMP280: </b> Instalable desde el gestor de librerías del IDE de Arduino. <br>
+        <b>Adafruit BMP280: </b> Instalable desde el gestor de librerías del IDE de Arduino.<br>
     </li>
     <li>
         <b>Time by Michael Margolis: </b> Incluida en la librería de Blynk. <br>
