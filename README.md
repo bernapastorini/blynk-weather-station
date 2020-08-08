@@ -13,18 +13,18 @@
 
 
 <h2>Librerías utilizadas</h2> <br>
-<li>
-    <ul>
+<ul>
+    <li>
         <b>Blynk: </b> https://github.com/blynkkk/blynk-library/releases <br>
-    </ul>
-    <ul>
+    </li>
+    <li>
         <b>DHT22: </b> Instalable desde el gestor de librerías del IDE de Arduino. <br>
-    </ul>
-    <ul>
+    </li>
+    <li>
         <b>Adafruit BMP280: </b> Instalable desde el gestor de librerías del IDE de Arduino. <br>
-    </ul>
-    <ul>
+    </li>
+    <li>
         <b>Time by Michael Margolis: </b> Instalable desde el gestor de librerías del IDE de Arduino. <br>
-    </ul>
-</li>
+    </li>
+</ul>
 
