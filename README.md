@@ -1,11 +1,8 @@
 <h1>Estacion meteorológica Arduino - NodeMCU</h1>
 <br>
-<br>
 <h2>Tweetea automaticamente</h2>
 <br>
-<br>
 <p>Registra temperatura (de dos sensores diferentes, para minimizar errores), presión atomsférica y humedad ambiente, y las publica en twitter de manera automática.</p>
-<br>
 <br>
 <h3>Links útiles</h3>
 <br>
