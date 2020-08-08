@@ -12,7 +12,10 @@
 <h2>Librerías utilizadas</h2> <br>
 <ul>
     <li>
-        <b>Blynk: </b> https://github.com/blynkkk/blynk-library/releases <b>Descargar la ultima version, descomprimir, y copiar el contenido de la carpeta 'libraries' dentro de la carpeta del mismo nombre, de Arduino (Generalmente ubicada en 'C:\Archivos de Programa\Arduino')</b>.<br>
+        <b>Blynk: </b> https://github.com/blynkkk/blynk-library/releases 
+        <ul>
+            <li>Descargar la ultima version, descomprimir, y copiar el contenido de la carpeta 'libraries' dentro de la carpeta del mismo nombre, de Arduino (Generalmente ubicada en 'C:\Archivos de Programa\Arduino').</li>
+        </ul>
     </li>
     <li>
         <b>DHT22 by Adafruit: </b> Instalable desde el gestor de librerías del IDE de Arduino. <br>
