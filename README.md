@@ -52,12 +52,10 @@
 
 <h2>Configurando el código</h2>
 <p>Una vez cubiertos los Requerimientos previos, hay algunas cosas dentro del código que deberas personalizar. <br>
-
-
 ```cpp
-char auth[] = "TU TOKEN DE BLYNK";
-char ssid[] = "EL NOMBRE DE TU RED WIFI";
-char pass[] = "LA CONTRASEÑA DE TU RED WIFI";
+char auth[] = "TU TOKEN DE BLYNK"; //Aqui, entre las comillas, deberas pegar el Auth Token que llego a tu email al crear el proyecto.
+char ssid[] = "EL NOMBRE DE TU RED WIFI"; //Aqui, entre las comillas, deberas introducir el nombre de tu red WiFi.
+char pass[] = "LA CONTRASEÑA DE TU RED WIFI"; //Aqui, entre las comillas, deberas introducir la contraseña de tu red WiFi.
 ```
 
 </p>
