@@ -14,7 +14,7 @@
     <li>
         <b>Blynk: </b> https://github.com/blynkkk/blynk-library/releases 
         <ul>
-            <li>Descargar la ultima version, descomprimir, y copiar el contenido de la carpeta 'libraries' dentro de la carpeta del mismo nombre, de Arduino (Generalmente ubicada en 'C:\Archivos de Programa\Arduino').</li>
+            <li>Descargar la última version, descomprimir, y copiar el contenido de la carpeta 'libraries' dentro de la carpeta del mismo nombre, de Arduino (Generalmente ubicada en 'C:\Archivos de Programa\Arduino').</li>
         </ul>
     </li>
     <li>
@@ -37,9 +37,13 @@
 <h2>Requerimientos previos</h2> <br>
 <ol>
     <li>Instalar las librerias mencionadas en el apartado <a href="#librerías-utilizadas">Librerías utilizadas</a>.</li>
-    <li>Añadir las tarjetas ESP8266 al IDE de Arduino, yendo al menu Archivo > Preferencias, y pegando el link https://arduino.esp8266.com/stable/package_esp8266com_index.json donde dice 'Gestor de URLs adicionales de tarjetas'.</li>
-    <li>Tambien en el IDE de Arduino, ir al menu Herramientas > Placa > Gestor de tarjetas, buscar ESP8266, e instalar la ultima versión disponible.</li>
-    <li>Descarga en tu telefono la aplicacion de Blynk. Puedes buscarla en la tienda de aplicaciones, o utilizar los links que deje en <a href="#links-útiles">Links útiles</a>.</li>
+    <li>Añadir las tarjetas ESP8266 al IDE de Arduino, yendo al menú <b>Archivo > Preferencias</b>, y pegando el link https://arduino.esp8266.com/stable/package_esp8266com_index.json donde dice 'Gestor de URLs adicionales de tarjetas'.</li>
+    <li>Tambien en el IDE de Arduino, ir al menú <b>Herramientas > Placa > Gestor de tarjetas</b>, buscar ESP8266, e instalar la ultima versión disponible.
+        <ul>
+            <li>Ahora en el menú <b>Herramientas > Placa > ESP8266 Boards</b>, deberás elegir la <b>NodeMCU 1.0</b>.</li>
+        </ul>
+    </li>
+    <li>Descarga en tu telefono la aplicación de Blynk. Puedes buscarla en la tienda de aplicaciones, o utilizar los links que dejé en <a href="#links-útiles">Links útiles</a>.</li>
     <li>Crea un proyecto en Blynk.
         <ul>
             <li>Abre la app de Blynk, y registrate.</li>
