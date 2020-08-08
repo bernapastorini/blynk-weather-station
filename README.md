@@ -1,9 +1,8 @@
 <html style="text-align: justify;">
 <h1>Estacion meteorológica Arduino - NodeMCU</h1>
 <br>
-<p>Registra temperatura (de dos sensores diferentes, para minimizar errores), presión atomsférica y humedad ambiente, y las <b> en twitter de manera automática.</b></p>
-<br>
-<h3>Links útiles</h3>
+<p>Registra temperatura (de dos sensores diferentes, para minimizar errores), presión atomsférica y humedad ambiente, y las publica <b> en twitter de manera automática.</b></p>
+<h2>Links útiles</h2>
 <br>
 <b>Descarga App Blynk Android: </b> https://play.google.com/store/apps/details?id=cc.blynk&hl=es_AR <br>
 <b>Descarga App Blynk iOS: </b> https://apps.apple.com/ar/app/blynk-iot-for-arduino-esp32/id808760481 <br>
