@@ -1,7 +1,7 @@
 <html style="text-align: justify;">
 <h1>Estacion meteorológica Arduino - NodeMCU</h1>
 <br>
-<p>Utilizando un microcontrolador WiFi <b>NodeMCU ESP8266</b>, sensores <b>DHT22</b> y <b>BMP280</b>, registra temperatura (a través de dos sensores diferentes, para minimizar errores), presión atmosférica y humedad ambiente, y las <b>publica en twitter de manera automática</b>, a través de un servidor del servicio 'Blynk'.</p>
+<p>Utilizando un microcontrolador WiFi <b>NodeMCU ESP8266</b>, sensores <b>DHT22</b> y <b>BMP280</b>, registra la temperatura, presión atmosférica y humedad ambiente, y las <b>publica en twitter de manera automática</b>, a través de un servidor del servicio 'Blynk'.</p>
 <h2>Links útiles</h2><br>
 <ul>
 <li><b>Descarga App Blynk Android: </b> https://play.google.com/store/apps/details?id=cc.blynk&hl=es_AR <br></li>
@@ -51,12 +51,12 @@
 </ol>
 
 <h2>Configurando el código</h2>
-<p>Una vez cubiertos los Requerimientos previos, hay algunas cosas dentro del código que deberas personalizar. <br>
+<p>Una vez cubiertos los Requerimientos previos, hay algunas cosas dentro del código de <a href="https://github.com/bernapastorini/blynk-weather-station/blob/master/WeatherStation.ino">WeatherStation.ino</a> que deberas personalizar. <br>
 
 ```cpp
-char auth[] = "TU TOKEN DE BLYNK"; //Aqui, entre las comillas, deberas pegar el Auth Token que llego a tu email al crear el proyecto.
-char ssid[] = "EL NOMBRE DE TU RED WIFI"; //Aqui, entre las comillas, deberas introducir el nombre de tu red WiFi.
-char pass[] = "LA CONTRASEÑA DE TU RED WIFI"; //Aqui, entre las comillas, deberas introducir la contraseña de tu red WiFi.
+char auth[] = "TU TOKEN DE BLYNK"; //Aqui, entre las comillas, deberás pegar el Auth Token que llegó a tu email al crear el proyecto.
+char ssid[] = "EL NOMBRE DE TU RED WIFI"; //Aqui, entre las comillas, deberás introducir el nombre de tu red WiFi.
+char pass[] = "LA CONTRASEÑA DE TU RED WIFI"; //Aqui, entre las comillas, deberás introducir la contraseña de tu red WiFi.
 ```
 
 </p>

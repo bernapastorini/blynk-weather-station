@@ -1,5 +1,5 @@
 #define BLYNK_PRINT Serial
-#define BMP280_I2C_ADDRESS 0x76 //Si no funciona, intenta con 0x77
+#define BMP280_I2C_ADDRESS 0x77 //Si no funciona, intenta con 0x76
 #define DHTTYPE DHT22
 
 #include <Adafruit_BMP280.h>
@@ -52,8 +52,8 @@ void setup()
   dht.begin();
   Serial.println("Sensor DHT22 conectado.");
 
-  setSyncInterval(600); //10 minutos
-  timer.setInterval(30000, reconnectBlynk);
+  setSyncInterval(600); //10 Minutos - Intervalo de sincronizacion del tiempo con el servidor de Blynk.
+  timer.setInterval(30000, reconnectBlynk); //30 segundos - Llama la funcion reconnectBlynk, que chequea la conexión a internet.
   Serial.println("Iniciando...");
 }
 
@@ -63,8 +63,7 @@ void loop()
 
   if(firstRun)
   {
-    delay(5000);
-    Serial.println("Tiempo sincronizado.");
+    delay(5000); //5 segundos - Demora la primer ejecución del loop, para darle tiempo al reloj a sincronizarse, de lo contrario iniciaría con hora 00:00.
     firstRun = false;
   }
 
@@ -75,7 +74,7 @@ void loop()
 
   if(!tweeted)
   {
-    if(minute() == 0 || minute() == 30)
+    if(minute() == 0 || minute() == 30) //Configurado para tweetear cada vez que los minutos sean 00 o 30.
     {
       pressure = bmp280.readPressure() / 100;
       tempBMP = bmp280.readTemperature();
