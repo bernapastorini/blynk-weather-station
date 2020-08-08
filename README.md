@@ -18,19 +18,25 @@
         </ul>
     </li>
     <li>
-        <b>DHT22 by Adafruit: </b> Instalable desde el gestor de librerías del IDE de Arduino. <br>
+        <b>DHT22 by Adafruit: </b> Instalable desde el gestor de librerías del IDE de Arduino.
+        <ul>
+            <li>En el IDE de Arduino, ir a Herramientas > 'Administrar bibliotecas...', buscar 'DHT22', verificar que sea la distribuida por Adafruit, y darle al boton 'Instalar'.</li>
+        </ul>
     </li>
     <li>
-        <b>BMP280 by Adafruit: </b> Instalable desde el gestor de librerías del IDE de Arduino.<br>
+        <b>BMP280 by Adafruit: </b> Instalable desde el gestor de librerías del IDE de Arduino.
+        <ul>
+            <li>En el IDE de Arduino, ir a Herramientas > 'Administrar bibliotecas...', buscar 'BMP280', verificar que sea la distribuida por Adafruit, y darle al boton 'Instalar'.</li>
+        </ul>
     </li>
     <li>
-        <b>Time by Michael Margolis: </b> Incluida en la librería de Blynk. <br>
+        <b>Time by Michael Margolis: </b> Incluida en la librería de Blynk.
     </li>
 </ul>
 
 <h2>Requerimientos previos</h2> <br>
 <ol>
-    <li>Instalar las librerias mencionadas en el item <a href="#librerías-utilizadas">Librerías utilizadas</a>.</li>
+    <li>Instalar las librerias mencionadas en el apartado <a href="#librerías-utilizadas">Librerías utilizadas</a>.</li>
     <li>Añadir las tarjetas ESP8266 al IDE de Arduino, yendo al menu Archivo > Preferencias, y pegando el link https://arduino.esp8266.com/stable/package_esp8266com_index.json donde dice 'Gestor de URLs adicionales de tarjetas'.</li>
     <li>Tambien en el IDE de Arduino, ir al menu Herramientas > Placa > Gestor de tarjetas, buscar ESP8266, e instalar la ultima versión disponible.</li>
 </ol>
