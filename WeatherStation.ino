@@ -14,7 +14,6 @@ BlynkTimer timer;
 WidgetRTC rtc;
 
 char auth[] = "TU TOKEN DE BLYNK";
-
 char ssid[] = "EL NOMBRE DE TU RED WIFI";
 char pass[] = "LA CONTRASEÑA DE TU RED WIFI";
 

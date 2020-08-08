@@ -1,7 +1,7 @@
 <html style="text-align: justify;">
 <h1>Estacion meteorológica Arduino - NodeMCU</h1>
 <br>
-<p>Registra temperatura (a través de dos sensores diferentes, para minimizar errores), presión atmosférica y humedad ambiente, y las <b>publica en twitter de manera automática</b>, a través de un servidor del servicio 'Blynk'.</p>
+<p>Utilizando un microcontrolador WiFi <b>NodeMCU ESP8266</b>, sensores <b>DHT22</b> y <b>BMP280</b>, registra temperatura (a través de dos sensores diferentes, para minimizar errores), presión atmosférica y humedad ambiente, y las <b>publica en twitter de manera automática</b>, a través de un servidor del servicio 'Blynk'.</p>
 <h2>Links útiles</h2><br>
 <ul>
 <li><b>Descarga App Blynk Android: </b> https://play.google.com/store/apps/details?id=cc.blynk&hl=es_AR <br></li>
@@ -30,7 +30,7 @@
         </ul>
     </li>
     <li>
-        <b>Time by Michael Margolis: </b> Incluida en la librería de Blynk.
+        <b>Time by Michael Margolis: </b> Está incluida en la librería de Blynk instalada anteriormente.
     </li>
 </ul>
 
@@ -39,5 +39,26 @@
     <li>Instalar las librerias mencionadas en el apartado <a href="#librerías-utilizadas">Librerías utilizadas</a>.</li>
     <li>Añadir las tarjetas ESP8266 al IDE de Arduino, yendo al menu Archivo > Preferencias, y pegando el link https://arduino.esp8266.com/stable/package_esp8266com_index.json donde dice 'Gestor de URLs adicionales de tarjetas'.</li>
     <li>Tambien en el IDE de Arduino, ir al menu Herramientas > Placa > Gestor de tarjetas, buscar ESP8266, e instalar la ultima versión disponible.</li>
+    <li>Descarga en tu telefono la aplicacion de Blynk. Puedes buscarla en la tienda de aplicaciones, o utilizar los links que deje en <a href="#links-útiles">Links útiles</a>.</li>
+    <li>Crea un proyecto en Blynk.
+        <ul>
+            <li>Abre la app de Blynk, y registrate.</li>
+            <li>Selecciona 'New Project', dale un nombre a tu proyecto, y en 'Choose Device', selecciona 'NodeMCU'.</li>
+            <li>A tu cuenta de correo electronico te habra llegado un codigo ('Auth Token'), lo vas a necesitar pronto, asi que no borres ese correo.</li>
+            <li>Presiona el boton <b>+</b>, y añade los elementos 'Twitter', 'Notification', y 'Real-time clock'. Para el primero, te pedira los datos de la cuenta de Twitter desde la que quieras publicar.</li>
+        </ul>
+    </li>
 </ol>
+
+<h2>Configurando el código</h2>
+<p>Una vez cubiertos los Requerimientos previos, hay algunas cosas dentro del código que deberas personalizar. <br>
+
+
+```cpp
+char auth[] = "TU TOKEN DE BLYNK";
+char ssid[] = "EL NOMBRE DE TU RED WIFI";
+char pass[] = "LA CONTRASEÑA DE TU RED WIFI";
+```
+
+</p>
 </html>
