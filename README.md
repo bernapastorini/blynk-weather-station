@@ -10,7 +10,18 @@ Mira el <a href="#resultado">resultado</a> al final de esta página.
 <li><b>Descarga App Blynk iOS: </b> https://apps.apple.com/ar/app/blynk-iot-for-arduino-esp32/id808760481 <br></li>
 <li><b>Documentación oficial de Blynk: </b> http://docs.blynk.cc/ <br></li>
 </ul>
-
+<h2>Materiales necesarios</h2>
+<ol>
+    <li><b>1</b> NodeMCU ESP8266 (yo utilizo la versión 2, pero puedes utilizar la que tengas).</li>
+    <li><b>1</b> Sensor DHT22, que mide temperatura y humedad ambiente.</li>
+    <li><b>1</b> Sensor BMP280, que mide temperatura y presión atmosférica.
+        <ol>
+            <li>El objetivo de utilizar dos sensores diferentes que midan temperatura, es minimizar los errores y las diferencias.</li>
+        </ol>
+    </li>
+    <li><b>1</b> resistencia de 10k ohms. Si no sabes diferenciarlas, cada resistencia trae un código de colores diferente, puedes buscar en Google.</li>
+    <li><b>9</b> cables de tipo jumper macho a macho.</li>
+</ol>
 <h2>Librerías utilizadas</h2> <br>
 <ul>
     <li>
@@ -78,9 +89,14 @@ Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=
 <img src="https://i.imgur.com/Npy24Iv.png" alt="WeatherStation en Fritzing">
 <ul>
 <h4>Notas</h4>
+<li>Como se ve en la imagen, deberás conectar una <b>resistencia de 10k</b> en el sensor DHT22, entre los pines de 3.3v y el que va al pin D5 del NodeMCU.</li>
 <li>El sensor BMP280 en realidad tiene 2 pines mas (CSB y SDD), pero no los utilizamos para este proyecto.</li>
 <li>Con la conexion USB del NodeMCU deberia ser suficiente para alimentar tu proyecto. Si por alguna razon no alcanza, siempre puedes enviarle electricidad desde otro dispositivo (Como un Arduino UNO), a traves del pin de 5V de Arduino, al pin 'VIN' del NodeMCU y conectando también 'GND' de ambos controladores.</li>
 </ul>
+<br>
+Deberia verse mas o menos, como el mio (puedes utilizar cables mas cortos, te va a quedar mejor presentado):
+<br>
+<img src="https://i.imgur.com/a8pYsyD.jpg" alt="WeatherStation - Finalizado">
 </p>
 <h2>Resultado</h2>
 <p>
@@ -107,4 +123,6 @@ Serial.begin(9600);             <- Esta es una linea sin comentar.
 
 <b>¿Para qué comentar esto?</b> Para que el controlador NodeMCU no esté intentando enviar información a través del puerto USB, ya que no está conectado a ninguna PC y puede provocar errores en su funcionamiento.
 </p>
+
+Si lograste hacerlo, <b>¡FELICITACIONES!</b> Y si tenes algún tipo de problema, consulta o duda, puedes escribirme por Twitter (<b><a href="http://twitter.com/bernapastorini">@bernapastorini</a></b>), con gusto te voy a dar una mano.
 </html>
