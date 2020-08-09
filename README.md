@@ -84,20 +84,23 @@ Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=
 <p>
 Una vez hechos los cambios en el codigo y conectados todos los cables a los sensores, solo queda subir el codigo al NodeMCU, desde el IDE de Arduino (<b>Control + U</b>), entrar a la app Blynk y darle Play ► al proyecto.
 <br>
+<br>
 El resultado será, cada media hora, un tweet como este:
 <br>
+<br>
 <img src="https://i.imgur.com/qTv1D7n.png" alt="Weather Station - Tweet">
+<br>
 <br>
 Si lo tienes conectado a la PC por USB irá además dando información sobre su funcionamiento a traves del Monitor Serie del IDE de Arduino (<b>Control + Mayus + M</b>).
 <br>
 Si lo vas a dejar al aire libre, desconectado de una PC, te recomiendo comentar la primer linea de código, y todas las que comiencen con <b>Serial.</b> anteponiendoles dos barras <b>//</b>:
 
-´´´
+```cpp
 #define BLYNK_PRINT Serial      <- Esta es una linea sin comentar.
 //#define BLYNK_PRINT Serial    <-Esta es una linea comentada.
 Serial.begin(9600);             <- Esta es una linea sin comentar.
 //Serial.begin(9600);           <-Esta es una linea comentada.
-´´´
+```
 
 <b>¿Para qué comentar esto?</b> Para que el controlador NodeMCU no esté intentando enviar información a través del puerto USB, ya que no está conectado a ninguna PC y puede provocar errores en su funcionamiento.
 </p>
