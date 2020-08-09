@@ -70,7 +70,7 @@ char pass[] = "LA CONTRASEÑA DE TU RED WIFI"; //Aqui, entre las comillas, deber
 
 Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=protoboard&oq=protoboard" target="_blank">protoboard</a> plástico de 830 puntos, que me facilita mucho el proceso de prototipado. Te recomiendo que tengas uno de tamaño medio (400 puntos) como mínimo.
 <br> Deberás realizar las conexiones de la siguiente manera:
-<img src="https://raw.githubusercontent.com/bernapastorini/blynk-weather-station/master/WeatherStation-Fritzing_bb.png?token=ANQTRJXIJL4AD64E6YJMUNC7GB2BY" alt="WeatherStation en Fritzing">
+<img src="https://i.imgur.com/Npy24Iv.png" alt="WeatherStation en Fritzing">
 <ul>
 <h4>Notas</h4>
 <li>El sensor BMP280 en realidad tiene 2 pines mas (CSB y SDD), pero no los utilizamos para este proyecto.</li>
