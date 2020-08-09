@@ -1,5 +1,5 @@
 <html style="text-align: justify;">
-<h1>Estacion meteorológica Arduino - NodeMCU</h1>
+<h1>Estación meteorológica Arduino - NodeMCU</h1>
 <br>
 <p>Utilizando un microcontrolador WiFi <b>NodeMCU ESP8266</b>, sensores <b>DHT22</b> y <b>BMP280</b>, registra la temperatura, presión atmosférica y humedad ambiente, y las <b>publica en twitter de manera automática</b>, a través de un servidor del servicio 'Blynk'.</p>
 <h2>Links útiles</h2><br>
@@ -38,7 +38,7 @@
 <ol>
     <li>Instalar las librerias mencionadas en el apartado <a href="#librerías-utilizadas">Librerías utilizadas</a>.</li>
     <li>Añadir las tarjetas ESP8266 al IDE de Arduino, yendo al menú <b>Archivo > Preferencias</b>, y pegando el link https://arduino.esp8266.com/stable/package_esp8266com_index.json donde dice 'Gestor de URLs adicionales de tarjetas'.</li>
-    <li>Tambien en el IDE de Arduino, ir al menú <b>Herramientas > Placa > Gestor de tarjetas</b>, buscar ESP8266, e instalar la ultima versión disponible.
+    <li>Tambien en el IDE de Arduino, ir al menú <b>Herramientas > Placa > Gestor de tarjetas</b>, buscar ESP8266, e instalar la última versión disponible.
         <ul>
             <li>Ahora en el menú <b>Herramientas > Placa > ESP8266 Boards</b>, deberás elegir la <b>NodeMCU 1.0</b>.</li>
         </ul>
@@ -62,6 +62,9 @@ char auth[] = "TU TOKEN DE BLYNK"; //Aqui, entre las comillas, deberás pegar el
 char ssid[] = "EL NOMBRE DE TU RED WIFI"; //Aqui, entre las comillas, deberás introducir el nombre de tu red WiFi.
 char pass[] = "LA CONTRASEÑA DE TU RED WIFI"; //Aqui, entre las comillas, deberás introducir la contraseña de tu red WiFi.
 ```
-
 </p>
+
+<h2>Conectando los sensores</h2>
+Comencemos viendo los pines que tiene la placa NodeMCU v2:
+<img src="https://www.luisllamas.es/wp-content/uploads/2018/06/esp8266-nodemcu-pinout.png" alt="NodeMCU v2 Pinout">
 </html>
