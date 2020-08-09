@@ -72,7 +72,7 @@ Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=
 <br> Deberás realizar las conexiones de la siguiente manera:
 <img src="https://raw.githubusercontent.com/bernapastorini/blynk-weather-station/master/WeatherStation-Fritzing_bb.png?token=ANQTRJXIJL4AD64E6YJMUNC7GB2BY" alt="WeatherStation en Fritzing">
 <ul>
-<b>Notas</b> 
+<h4>Notas</h4>
 <li>El sensor BMP280 en realidad tiene 2 pines mas (CSB y SDD), pero no los utilizamos para este proyecto.</li>
 <li>Con la conexion USB del NodeMCU deberia ser suficiente para alimentar tu proyecto. Si por alguna razon no alcanza, siempre puedes enviarle electricidad desde otro dispositivo (Como un Arduino UNO), a traves del pin de 5V de Arduino, al pin 'VIN' del NodeMCU y conectando también 'GND' de ambos controladores.</li>
 </ul>
