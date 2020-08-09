@@ -70,6 +70,6 @@ char pass[] = "LA CONTRASEÑA DE TU RED WIFI"; //Aqui, entre las comillas, deber
 
 Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=protoboard&oq=protoboard" target="_blank">protoboard</a> plástico de 830 puntos, que me facilita mucho el proceso de prototipado. Te recomiendo que tengas uno de tamaño medio (400 puntos) como mínimo.
 Deberás realizar las conexiones de la siguiente manera:
-<img src="" alt="WeatherStation en Fritzing">
+<img src="https://raw.githubusercontent.com/bernapastorini/blynk-weather-station/master/WeatherStation-Fritzing_bb.png?token=ANQTRJXIJL4AD64E6YJMUNC7GB2BY" alt="WeatherStation en Fritzing">
 </p>
 </html>
