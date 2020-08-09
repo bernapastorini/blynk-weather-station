@@ -68,6 +68,6 @@ char pass[] = "LA CONTRASEÑA DE TU RED WIFI"; //Aqui, entre las comillas, deber
 <p>Comencemos viendo los pines que tiene la placa NodeMCU (Yo utilizo la v2, pero también sirven las demás versiones):
 <img src="https://www.luisllamas.es/wp-content/uploads/2018/06/esp8266-nodemcu-pinout.png" alt="NodeMCU v2 Pinout">
 
-Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=protoboard&oq=protoboard">protoboard</a> plástico de 830 puntos, que me facilita mucho el proceso de prototipado. Te recomiendo que tengas uno de tamaño medio.
+Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=protoboard&oq=protoboard" target="_blank">protoboard</a> plástico de 830 puntos, que me facilita mucho el proceso de prototipado. Te recomiendo que tengas uno de tamaño medio.
 </p>
 </html>
