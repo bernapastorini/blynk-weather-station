@@ -2,6 +2,8 @@
 <h1>Estación meteorológica Arduino - NodeMCU</h1>
 <br>
 <p>Utilizando un microcontrolador WiFi <b>NodeMCU ESP8266</b>, sensores <b>DHT22</b> y <b>BMP280</b>, registra la temperatura, presión atmosférica y humedad ambiente, y las <b>publica en twitter de manera automática</b>, a través de un servidor del servicio 'Blynk'.</p>
+<br>
+Mira el <a href="#resultado">resultado</a> al final de esta página.
 <h2>Links útiles</h2><br>
 <ul>
 <li><b>Descarga App Blynk Android: </b> https://play.google.com/store/apps/details?id=cc.blynk&hl=es_AR <br></li>
@@ -37,14 +39,14 @@
 <h2>Requerimientos previos</h2> <br>
 <ol>
     <li>Instala las librerias mencionadas en el apartado <a href="#librerías-utilizadas">Librerías utilizadas</a>.</li>
-    <li>Abre el archivo <b>WeatherStation.ino</b> con el IDE de Arduino</li>
+    <li>Abre el archivo <b>WeatherStation.ino</b> con el IDE de Arduino, descargable desde su <a href="https://www.arduino.cc/en/Main/Software">web oficial</a>.</li>
     <li>Añade las tarjetas ESP8266 al IDE de Arduino, yendo al menú <b>Archivo > Preferencias</b>, y pegando el link https://arduino.esp8266.com/stable/package_esp8266com_index.json donde dice 'Gestor de URLs adicionales de tarjetas'.</li>
-    <li>Tambien en el IDE de Arduino, en el menú <b>Herramientas > Placa > Gestor de tarjetas</b>, busca ESP8266, e instala la última versión disponible.
+    <li>También en el IDE de Arduino, en el menú <b>Herramientas > Placa > Gestor de tarjetas</b>, busca ESP8266, e instala la última versión disponible.
         <ul>
             <li>Ahora en el menú <b>Herramientas > Placa > ESP8266 Boards</b>, deberás elegir la <b>NodeMCU 1.0</b>.</li>
         </ul>
     </li>
-    <li>En el menu <b>Herramientas > Puerto</b>, deberás seleccionar el puerto al cual está conectado el NodeMCU. No te preocupes, si no eliges la correcta, te darás cuenta al intentar subir el codigo, y solo tienes que cambiar la selección de este item.</li>
+    <li>En el menú <b>Herramientas > Puerto</b>, deberás seleccionar el puerto al cual está conectado el NodeMCU. No te preocupes, si no eliges la correcta, te darás cuenta al intentar subir el codigo, y solo tienes que cambiar la selección de este item.</li>
     <li>Descarga en tu telefono la aplicación de Blynk. Puedes buscarla en la tienda de aplicaciones, o utilizar los links que dejé en <a href="#links-útiles">Links útiles</a>.</li>
     <li>Crea un proyecto en Blynk.
         <ul>
@@ -92,6 +94,7 @@ El resultado será, cada media hora, un tweet como este:
 <br>
 <br>
 Si lo tienes conectado a la PC por USB irá además dando información sobre su funcionamiento a traves del Monitor Serie del IDE de Arduino (<b>Control + Mayus + M</b>).
+<br>
 <br>
 Si lo vas a dejar al aire libre, desconectado de una PC, te recomiendo comentar la primer linea de código, y todas las que comiencen con <b>Serial.</b> anteponiendoles dos barras <b>//</b>:
 
