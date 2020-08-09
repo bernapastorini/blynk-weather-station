@@ -69,7 +69,12 @@ char pass[] = "LA CONTRASEÑA DE TU RED WIFI"; //Aqui, entre las comillas, deber
 <img src="https://www.luisllamas.es/wp-content/uploads/2018/06/esp8266-nodemcu-pinout.png" alt="NodeMCU v2 Pinout">
 
 Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=protoboard&oq=protoboard" target="_blank">protoboard</a> plástico de 830 puntos, que me facilita mucho el proceso de prototipado. Te recomiendo que tengas uno de tamaño medio (400 puntos) como mínimo.
-Deberás realizar las conexiones de la siguiente manera:
+<br> Deberás realizar las conexiones de la siguiente manera:
 <img src="https://raw.githubusercontent.com/bernapastorini/blynk-weather-station/master/WeatherStation-Fritzing_bb.png?token=ANQTRJXIJL4AD64E6YJMUNC7GB2BY" alt="WeatherStation en Fritzing">
+<ul>
+<b>Notas</b> 
+<li>El sensor BMP280 en realidad tiene 2 pines mas (CSB y SDD), pero no los utilizamos para este proyecto.</li>
+<li>Con la conexion USB del NodeMCU deberia ser suficiente para alimentar tu proyecto. Si por alguna razon no alcanza, siempre puedes enviarle electricidad desde otro dispositivo (Como un Arduino UNO), a traves del pin de 5V de Arduino, al pin 'VIN' del NodeMCU y conectando también 'GND' de ambos controladores.</li>
+</ul>
 </p>
 </html>
