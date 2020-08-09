@@ -36,13 +36,15 @@
 
 <h2>Requerimientos previos</h2> <br>
 <ol>
-    <li>Instalar las librerias mencionadas en el apartado <a href="#librerías-utilizadas">Librerías utilizadas</a>.</li>
-    <li>Añadir las tarjetas ESP8266 al IDE de Arduino, yendo al menú <b>Archivo > Preferencias</b>, y pegando el link https://arduino.esp8266.com/stable/package_esp8266com_index.json donde dice 'Gestor de URLs adicionales de tarjetas'.</li>
-    <li>Tambien en el IDE de Arduino, ir al menú <b>Herramientas > Placa > Gestor de tarjetas</b>, buscar ESP8266, e instalar la última versión disponible.
+    <li>Instala las librerias mencionadas en el apartado <a href="#librerías-utilizadas">Librerías utilizadas</a>.</li>
+    <li>Abre el archivo <b>WeatherStation.ino</b> con el IDE de Arduino</li>
+    <li>Añade las tarjetas ESP8266 al IDE de Arduino, yendo al menú <b>Archivo > Preferencias</b>, y pegando el link https://arduino.esp8266.com/stable/package_esp8266com_index.json donde dice 'Gestor de URLs adicionales de tarjetas'.</li>
+    <li>Tambien en el IDE de Arduino, en el menú <b>Herramientas > Placa > Gestor de tarjetas</b>, busca ESP8266, e instala la última versión disponible.
         <ul>
             <li>Ahora en el menú <b>Herramientas > Placa > ESP8266 Boards</b>, deberás elegir la <b>NodeMCU 1.0</b>.</li>
         </ul>
     </li>
+    <li>En el menu <b>Herramientas > Puerto</b>, deberás seleccionar el puerto al cual está conectado el NodeMCU. No te preocupes, si no eliges la correcta, te darás cuenta al intentar subir el codigo, y solo tienes que cambiar la selección de este item.</li>
     <li>Descarga en tu telefono la aplicación de Blynk. Puedes buscarla en la tienda de aplicaciones, o utilizar los links que dejé en <a href="#links-útiles">Links útiles</a>.</li>
     <li>Crea un proyecto en Blynk.
         <ul>
@@ -80,9 +82,23 @@ Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=
 </p>
 <h2>Resultado</h2>
 <p>
-    Una vez hechos los cambios en el codigo y conectados todos los cables a los sensores, solo queda entrar a la app Blynk y darle Play \25BA al proyecto.
-    <br>
-    El resultado sera este:
-    <img src="https://i.imgur.com/qTv1D7n.png" alt="Weather Station - Tweet">
+Una vez hechos los cambios en el codigo y conectados todos los cables a los sensores, solo queda subir el codigo al NodeMCU, desde el IDE de Arduino (<b>Control + U</b>), entrar a la app Blynk y darle Play ► al proyecto.
+<br>
+El resultado será, cada media hora, un tweet como este:
+<br>
+<img src="https://i.imgur.com/qTv1D7n.png" alt="Weather Station - Tweet">
+<br>
+Si lo tienes conectado a la PC por USB irá además dando información sobre su funcionamiento a traves del Monitor Serie del IDE de Arduino (<b>Control + Mayus + M</b>).
+<br>
+Si lo vas a dejar al aire libre, desconectado de una PC, te recomiendo comentar la primer linea de código, y todas las que comiencen con <b>Serial.</b> anteponiendoles dos barras <b>//</b>:
+
+´´´
+#define BLYNK_PRINT Serial      <- Esta es una linea sin comentar.
+//#define BLYNK_PRINT Serial    <-Esta es una linea comentada.
+Serial.begin(9600);             <- Esta es una linea sin comentar.
+//Serial.begin(9600);           <-Esta es una linea comentada.
+´´´
+
+<b>¿Para qué comentar esto?</b> Para que el controlador NodeMCU no esté intentando enviar información a través del puerto USB, ya que no está conectado a ninguna PC y puede provocar errores en su funcionamiento.
 </p>
 </html>
