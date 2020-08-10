@@ -1,7 +1,7 @@
 <html style="text-align: justify;">
 <h1>Estación meteorológica Arduino - NodeMCU</h1>
 <br>
-<p>Utilizando un microcontrolador WiFi <b>NodeMCU ESP8266</b>, sensores <b>DHT22</b> y <b>BMP280</b>, registra la temperatura, presión atmosférica y humedad ambiente, y las <b>publica en twitter de manera automática</b>, a través de un servidor del servicio 'Blynk'.</p>
+<p>Utilizando un microcontrolador WiFi <b>NodeMCU ESP8266</b>, sensores <b>DHT22</b> y <b>BMP280</b>, registra la temperatura, presión atmosférica y humedad ambiente, y las <b>publica en twitter de manera automática</b>, a través de un servidor del servicio '<b>Blynk</b>'.</p>
 <br>
 Mira el <a href="#resultado">resultado</a> al final de esta página.
 <h2>Links útiles</h2><br>
@@ -11,17 +11,18 @@ Mira el <a href="#resultado">resultado</a> al final de esta página.
 <li><b>Documentación oficial de Blynk: </b> http://docs.blynk.cc/ <br></li>
 </ul>
 <h2>Materiales necesarios</h2>
-<ol>
+<ul>
     <li><b>1</b> NodeMCU ESP8266 (yo utilizo la versión 2, pero puedes utilizar la que tengas).</li>
     <li><b>1</b> Sensor DHT22, que mide temperatura y humedad ambiente.</li>
     <li><b>1</b> Sensor BMP280, que mide temperatura y presión atmosférica.
-        <ol>
+        <ul>
             <li>El objetivo de utilizar dos sensores diferentes que midan temperatura, es minimizar los errores y las diferencias.</li>
-        </ol>
+        </ul>
     </li>
     <li><b>1</b> resistencia de 10k ohms. Si no sabes diferenciarlas, cada resistencia trae un código de colores diferente, puedes buscar en Google.</li>
     <li><b>9</b> cables de tipo jumper macho a macho.</li>
-</ol>
+    <li><b>1</b> protoboard plástico de tamaño medio (400 puntos aprox), como mínimo. Yo uso uno grande, de 830 puntos.</li>
+</ul>
 <h2>Librerías utilizadas</h2> <br>
 <ul>
     <li>
@@ -83,7 +84,6 @@ char pass[] = "LA CONTRASEÑA DE TU RED WIFI"; //Aqui, entre las comillas, deber
 <p>Comencemos viendo los pines que tiene la placa NodeMCU (Yo utilizo la v2, pero también sirven las demás versiones):
 <img src="https://www.luisllamas.es/wp-content/uploads/2018/06/esp8266-nodemcu-pinout.png" alt="NodeMCU v2 Pinout">
 
-Para este proyecto estoy utilizando un <a href="https://www.google.com/search?q=protoboard&oq=protoboard" target="_blank">protoboard</a> plástico de 830 puntos, que me facilita mucho el proceso de prototipado. Te recomiendo que tengas uno de tamaño medio (400 puntos) como mínimo.
 <br> Deberás realizar las conexiones de la siguiente manera: 
 <br><b>(Abrir imagen para ver correctamente los textos de los pines)</b>
 <img src="https://i.imgur.com/Npy24Iv.png" alt="WeatherStation en Fritzing">
