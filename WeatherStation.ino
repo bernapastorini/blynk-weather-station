@@ -1,7 +1,7 @@
 #define BLYNK_PRINT Serial
 
 /*
-DISTRIBUIDO BAJO LICENCIA MIT - VER CONDICIONES EN https://github.com/bernapastorini/blynk-weather-station/blob/master/LICENSE
+DISTRIBUIDO DE MANERA GRATUITA BAJO LICENCIA MIT - VER CONDICIONES EN https://github.com/bernapastorini/blynk-weather-station/blob/master/LICENSE
 */
 
 #define BMP280_I2C_ADDRESS 0x77 //Si no funciona, intenta con 0x76
